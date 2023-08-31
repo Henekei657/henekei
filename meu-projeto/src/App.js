@@ -4,6 +4,8 @@ import SayMyName from './components/sayMyName';
 import Pessoa from './components/pessoa';
 import Frase from './components/frase';
 import Lista from './components/lista'
+import Evento from './components/evento'
+import Form from './components/form'
 
 function App() {
 
@@ -57,6 +59,12 @@ function App() {
       <h2>Lista</h2>
 
       <Lista/>
+
+      <h1>Testando eventos</h1>
+
+      <Evento/>
+      <Form/>
+
     </div>
   );
 }

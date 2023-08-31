@@ -15,7 +15,7 @@ item.propTypes = {
 
 item.defaultProps = {
     marca: 'Faltou um componente',
-    ano_lancamento: 'Faltou um ano',
+    ano_lancamento: 0,
 }
 
 export default item;
