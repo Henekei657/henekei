@@ -6,6 +6,8 @@ import Frase from './components/frase';
 import Lista from './components/lista'
 import Evento from './components/evento'
 import Form from './components/form'
+import Condicional from './components/condicional'
+import Array from './components/array'
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
   }
 
   const url = "https://via.placeholder.com/150";
+  const meusItens = ['react', 'view', 'angular'];
 
   return (
 
@@ -60,11 +63,18 @@ function App() {
 
       <Lista/>
 
-      <h1>Testando eventos</h1>
+      <h2>Testando eventos</h2>
 
       <Evento/>
       <Form/>
 
+      <h2>Renderizando Condicional</h2>
+      <Condicional/>
+
+      <h2>Renderizando de Listas</h2>
+      <Array itens={meusItens}/>
+      <Array itens={[]}/>
+    
     </div>
   );
 }
