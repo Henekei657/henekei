@@ -1,13 +1,16 @@
 import './App.css';
+import {useState} from 'react';
 import HelloWorld from './components/helloWorld'
 import SayMyName from './components/sayMyName';
 import Pessoa from './components/pessoa';
 import Frase from './components/frase';
-import Lista from './components/lista'
-import Evento from './components/evento'
-import Form from './components/form'
+import Lista from './components/lista';
+import Evento from './components/evento';
+import Form from './components/form';
 import Condicional from './components/condicional'
 import Array from './components/array'
+import SeuNome from './components/seuNome'
+import Saudacao from './components/saudacao'
 
 function App() {
 
@@ -20,7 +23,8 @@ function App() {
   }
 
   const url = "https://via.placeholder.com/150";
-  const meusItens = ['react', 'view', 'angular'];
+  const meusItens = ['react', 'view', 'angular'];  
+  const [nome, setNome] = useState(""); //Elevar para o nível de pai
 
   return (
 
@@ -75,6 +79,10 @@ function App() {
       <Array itens={meusItens}/>
       <Array itens={[]}/>
     
+    <h2>State Lift</h2>
+
+    <SeuNome setNome = {setNome}/>
+    <Saudacao nome={nome}/>
     </div>
   );
 }
